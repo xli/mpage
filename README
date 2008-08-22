@@ -1,0 +1,32 @@
+= MM
+
+Supporting MAPGE version: 0.0.x
+
+mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for integrating Mingle wiki page into another web application.
+
+
+== Installation
+
+== Online Resources
+
+== License
+
+mPage is available under an Apache License Version 2.0.
+
+== Support
+
+== Usage
+
+= Other stuff
+
+Author::  Li Xiao <swing1979@gmail.com>
+License::  Copyright 2008 by Li Xiao.
+           Released under an Apache License Version 2.0.  See the LICENSE file
+           included in the distribution.
+
+== Warranty
+
+This software is provided "as is" and without any express or
+implied warranties, including, without limitation, the implied
+warranties of merchantibility and fitness for a particular
+purpose.
