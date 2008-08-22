@@ -1,19 +1,17 @@
-= MM
+= MPAGE
 
 Supporting MAPGE version: 0.0.x
 
 mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for integrating Mingle wiki page into another web application.
 
-
 == Installation
 
-== Online Resources
+* Install mingle plugin
+* See integrating example a google gadget
 
 == License
 
 mPage is available under an Apache License Version 2.0.
-
-== Support
 
 == Usage
 
