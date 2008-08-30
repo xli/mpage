@@ -15,7 +15,7 @@
         
         var responseHandler = "function responseHandler(response){\n"
         responseHandler +=    "  var html = '<link href=\"'+ response.stylesheet +'\" rel=\"Stylesheet\" type=\"text/css\"/>';\n"
-        responseHandler +=    "  html += '<div id=\"content\" class=\"wiki\"><div class=\"to-be-scrolled\">' + response.content + '</div></div>';\n"
+        responseHandler +=    "  html += '<div id=\"content\" class=\"wiki\">' + response.content + '</div>';\n"
         responseHandler +=    "  document.body.innerHTML = html;\n"
         responseHandler +=    "}\n"
         var doc = "<body>\n"
@@ -34,7 +34,7 @@
     </p>
     <p>
       <label for="page_name">Mingle Page Name:</label>
-      <input type='text' id='page_name' value="Defect Stats"/>
+      <input type='text' id='page_name' value="Defects Reported"/>
     </p>
     <input type='button' value="Show" onclick="showPage()" />
     <hr/>

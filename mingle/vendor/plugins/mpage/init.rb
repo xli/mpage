@@ -7,7 +7,7 @@ module BasicAuthJsonSupport
   end
   def access_denied_with_json
     unless performed?
-      if params[:format] == 'json'
+      if params[:format] == 'json' || params[:action] == 'chart'
         headers["WWW-Authenticate"] = %(Basic realm="Welcome Mingle")
         render_json('Incorrect username or password.'.to_json, nil, 401)
       else
