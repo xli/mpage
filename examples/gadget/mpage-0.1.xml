@@ -13,9 +13,9 @@
       <div id='panel'>
         Loading...
       </div>
-      <link href="http://mmacro.googlecode.com/svn/trunk/mpage.css" media="screen" rel="Stylesheet" type="text/css" />
-      <script src="http://mmacro.googlecode.com/svn/trunk/prototype.js"></script>
-      <script src="http://mmacro.googlecode.com/svn/trunk/mpage.js"></script>
+      <link href="http://mpage.googlecode.com/svn/trunk/mpage.css" media="screen" rel="Stylesheet" type="text/css" />
+      <script src="http://mpage.googlecode.com/svn/trunk/prototype.js"></script>
+      <script src="http://mpage.googlecode.com/svn/trunk/mpage.js"></script>
     ]]>
   </Content> 
 </Module>
