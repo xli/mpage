@@ -1,17 +1,21 @@
 class MpagesController < ApplicationController
   
   def index
-    @page = @project.pages.find_by_name(params[:pagename])
-    session[:renderable_preview_content] = @page.content
-    
-    content = @page.formatted_content_preview(action_view)
-    
-    respond_to do |format|
-      format.json do
-        headers["Content-Type"] = "application/javascript"
-        render :text => "#{params[:jsonp]}(#{content.inspect})"
-      end
+    @action_view = action_view
+    stylesheet_source = Synthesis::AssetPackage.targets_from_sources("stylesheets", ['base']).first
+    stylesheet = @action_view.prepend_protocol_with_host_and_port(@action_view.send(:stylesheet_path, stylesheet_source))
+
+    @page = @project.pages.find_by_name(params[:pagename]) || @project.pages.find_by_identifier(params[:pagename])
+    #for render charts
+    unless @page
+      render_json({:stylesheet => stylesheet, :content => "Couldn't find page #{params[:pagename].to_s.bold}"}.to_json, params[:jsonp])
+      return
     end
+    
+    session[:renderable_preview_content] = @page.content
+    content = @page.formatted_content_preview(@action_view)
+    
+    render_json({:stylesheet => stylesheet, :content => content}.to_json, params[:jsonp])
   end
 
   private
@@ -32,7 +36,6 @@ class MpagesController < ApplicationController
       end
     end
   end
-  
 end
 
 
