@@ -6,10 +6,16 @@ mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for
 
 == Installation
 
-* Install mingle plugin
-* See integrating examples in the examples directory:
-** a google gadget: http://fusion.google.com/add?source=atgs&moduleurl=http%3A//mpage.googlecode.com/svn/trunk/examples/gadget/mpage-0.2.xml
-** a simple html
+=== Install mpage mingle plugin
+
+* shutdown Mingle server
+* Download http://mpage.googlecode.com/files/mpage-0.2.zip and unzip into directory: <mingle_installer_dir>/vendor/plugins
+* start Mingle server
+
+=== 2 integrating examples are placed in examples directory:
+
+* a google gadget, click http://fusion.google.com/add?source=atgs&moduleurl=http%3A//mpage.googlecode.com/svn/trunk/examples/gadget/mpage-0.2.xml to install into your igoogle desktop
+* a simple html
 
 == License
 
