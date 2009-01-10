@@ -1,6 +1,8 @@
 
 <p>
-  <label for="page_name">Copy and paste this link into mpage gadget setting</label>
+  <label for="page_name">
+    Mpage URL of <%= params[:page_name].bold %> page, copy and paste this url into mpage client <span class="notes">(Find more from <a href='http://github.com/xli/mpage/tree/master' target='_blank'>mpage homepage</a>)</span>.
+  </label>
   <%= text_field_tag 'mpage_url', h(@mpage_url), :style => "width: 100%" -%>
 </p>
 <%= javascript_with_rescue <<-JAVASCRIPT
