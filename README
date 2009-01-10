@@ -7,7 +7,9 @@ mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for
 == Installation
 
 * Install mingle plugin
-* See integrating example a google gadget
+* See integrating examples in the examples directory:
+ * a google gadget
+ * a simple html
 
 == License
 
@@ -17,7 +19,7 @@ mPage is available under an Apache License Version 2.0.
 
 = Other stuff
 
-Author::  Li Xiao <swing1979@gmail.com>
+Author::  Li Xiao <iam@li-xiao.com>
 License::  Copyright 2008 by Li Xiao.
            Released under an Apache License Version 2.0.  See the LICENSE file
            included in the distribution.

@@ -1,0 +1,7 @@
+extend Mpage::URLReplace
+
+stylesheet_source = Synthesis::AssetPackage.targets_from_sources("stylesheets", ['base']).first
+stylesheet = prepend_protocol_with_host_and_port(stylesheet_path(stylesheet_source))
+content = @page.formatted_content(self)
+
+page.call(Mpage::JS_CALLBACK, {:stylesheet => stylesheet, :content => content})

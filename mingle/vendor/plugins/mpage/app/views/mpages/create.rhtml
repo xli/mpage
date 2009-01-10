@@ -1,0 +1,12 @@
+
+<p>
+  <label for="page_name">Copy and paste this link into mpage gadget setting</label>
+  <%= text_field_tag 'mpage_url', h(@mpage_url), :style => "width: 100%" -%>
+</p>
+<%= javascript_with_rescue <<-JAVASCRIPT
+  Event.observe('mpage_url', 'focus', function(e) {
+    $('mpage_url').select();
+  });
+  $('mpage_url').focus();
+JAVASCRIPT
+%>

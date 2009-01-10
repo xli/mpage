@@ -5,8 +5,7 @@
     <Require feature="opensocial-0.7" />
     <optional feature="shareable-prefs"/>
   </ModulePrefs>
-  <UserPref name="pageName" display_name="Page Name" datatype="string" required='true' />
-  <UserPref name="projectURL" display_name="Project URL" datatype="string" required='true' />
+  <UserPref name="mpageURL" display_name="Mingle project Mpage URL" datatype="string" required='true' />
   
   <Content type="html">
     <![CDATA[ 

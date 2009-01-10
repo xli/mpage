@@ -1,0 +1,27 @@
+
+<%= render :partial => 'shared/admin_actions'%>
+
+<h1>MPage</h1>
+
+<div style='margin: 1em;'>
+<% form_remote_tag(
+      :update => "generated-url",
+      :before => show_spinner('spinner'),
+      :complete => hide_spinner('spinner'),
+      :url => {:action => 'create'}
+    ) do -%>
+  <label for="page_name">Page Name:<span class="required">*</span> <span class="notes">(Wiki page name)</span></label>
+  <%= text_field_tag('page_name') %>
+  <%= submit_tag 'Generate URL for mpage gadget', :id => 'submit' %>
+  <%= spinner %>
+<% end -%>
+</div>
+<div id="page_name_list" class="auto_complete"></div>
+
+<%= javascript_with_rescue <<-JAVASCRIPT
+  $('page_name').focus();
+  new Autocompleter.Local('page_name', 'page_name_list', #{@page_names.inspect}, { fullSearch: true, partialSearch: true, partialChars: 1 });
+  JAVASCRIPT
+%>
+
+<div id='generated-url'></div>

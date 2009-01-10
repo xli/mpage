@@ -1,9 +1,5 @@
 var prefs = new _IG_Prefs();
-var pageName = prefs.getString("pageName").strip();
-var projectURL = prefs.getString("projectURL").strip();
-
-var action = [projectURL, 'mpages.json'].join('/');
-var url = action + "?jsonp=responseHandler&pagename=" + encodeURIComponent(pageName);
+var mpageURL = prefs.getString("mpageURL").strip();
 
 function responseHandler(response) {
   var html = '<link href="'+ response.stylesheet +'" rel="Stylesheet" type="text/css"/>';
@@ -12,4 +8,4 @@ function responseHandler(response) {
   _IG_AdjustIFrameHeight();
 }
 
-document.write("<script src='" + url + "'  type='text/javascript'></script>")
+document.write("<script src='" + mpageURL + "'  type='text/javascript'></script>")
