@@ -2,7 +2,7 @@
 
 Supporting MAPGE version: 0.0.x
 
-mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for integrating Mingle wiki page into another web application.
+Mpage is a Mingle(http://studios.thoughtworks.com/) plugin providing Javascript API for integrating Mingle wiki page into another web application.
 
 == Installation
 
