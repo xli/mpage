@@ -12,7 +12,7 @@
     ) do -%>
   <label for="page_name">Page Name:<span class="required">*</span> <span class="notes">(Wiki page name)</span></label>
   <%= text_field_tag('page_name') %>
-  <%= submit_tag 'Generate URL for mpage gadget', :id => 'submit' %>
+  <%= submit_tag 'Generate Mpage URL', :id => 'submit' %>
   <%= spinner %>
 <% end -%>
 </div>
@@ -25,3 +25,10 @@
 %>
 
 <div id='generated-url'></div>
+
+<div class='notes'>
+   <p>In order to work with other web applications, mpage does not require authentication. The mpages are protected by encrypted URLs that are only available to members of the project team, which is same with <b>history feeds</b>. If the team's mpages have been compromised in any way, reset your project's secret key in order to immediately invalidate all existing mpages, <b>which also immediately invalidate Atom feeds</b>.</p>
+</div>
+<p>
+<%= link_to('Go to regenerate secret key', {:controller => 'projects', :action => 'advanced'})%>
+</p>
