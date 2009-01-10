@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="mpage - Mingle Page" author="Li Xiao" author_email="xli@thoughtworks.com" screenshot="http://github.com/xli/mpage/raw/v0.2/clients/gadget/screenshot.jpg">
+  <ModulePrefs title="mpage - Mingle Page" author="Li Xiao" author_email="xli@thoughtworks.com" screenshot="http://github.com/xli/mpage/raw/v0.2/clients/gadget/screenshot.png" scrolling="true" description="Mpage is a Mingle(studios.thoughtworks.com/) plugin providing Javascript API for integrating Mingle wiki page into another web application.">
     <Require feature="dynamic-height"/>
     <Require feature="opensocial-0.7" />
     <optional feature="shareable-prefs"/>
