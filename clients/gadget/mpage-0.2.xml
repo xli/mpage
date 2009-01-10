@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="mpage - Mingle Page" author="Li Xiao" author_email="xli@thoughtworks.com" screenshot="http://github.com/xli/mpage/raw/master/clients/gadget/screenshot.jpg">
+  <ModulePrefs title="mpage - Mingle Page" author="Li Xiao" author_email="xli@thoughtworks.com" screenshot="http://github.com/xli/mpage/raw/v0.2/clients/gadget/screenshot.jpg">
     <Require feature="dynamic-height"/>
     <Require feature="opensocial-0.7" />
     <optional feature="shareable-prefs"/>
@@ -12,8 +12,8 @@
       <div id='panel'>
         Loading...
       </div>
-      <link href="http://github.com/xli/mpage/raw/master/clients/gadget/mpage.css" media="screen" rel="Stylesheet" type="text/css" />
-      <script src="http://github.com/xli/mpage/raw/master/clients/gadget/mpage.js"></script>
+      <link href="http://github.com/xli/mpage/raw/v0.2/clients/gadget/mpage.css" media="screen" rel="Stylesheet" type="text/css" />
+      <script src="http://github.com/xli/mpage/raw/v0.2/clients/gadget/mpage.js"></script>
     ]]>
   </Content> 
 </Module>

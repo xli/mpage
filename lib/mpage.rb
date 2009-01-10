@@ -1,5 +1,6 @@
 module Mpage
   JS_CALLBACK = 'mpageCallback'
+  VERSION = '0.2'
 
   module URLReplace
     def self.extended(base)

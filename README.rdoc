@@ -14,7 +14,7 @@ mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for
 
 === 2 integrating examples are placed in examples directory:
 
-* a google gadget, click http://fusion.google.com/add?source=atgs&moduleurl=http%3A//github.com/xli/mpage/raw/master/clients/gadget/mpage-0.2.xml to install into your igoogle desktop
+* a google gadget, click http://fusion.google.com/add?source=atgs&moduleurl=http%3A//github.com/xli/mpage/raw/v0.2/clients/gadget/mpage-0.2.xml to install into your igoogle desktop
 * a simple html
 
 == License
