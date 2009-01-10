@@ -16,9 +16,6 @@ module Mpage
         options[:pagename] = @project.encrypt(options[:pagename])
       end
       prepend_protocol_with_host_and_port(url_for_without_mpage_delegation(options, *params))
-    rescue
-      puts $!.message
-      puts $!.backtrace.join("\n")
     end
   end
 end
