@@ -8,7 +8,7 @@ mPage is a Mingle(http://studios.thoughtworks.com/) plugin creating a js api for
 
 * Install mingle plugin
 * See integrating examples in the examples directory:
- * a google gadget
+ * a google gadget: [http://fusion.google.com/add?source=atgs&moduleurl=http%3A//mpage.googlecode.com/svn/trunk/examples/gadget/mpage-0.2.xml http://gmodules.com/ig/images/plus_google.gif]
  * a simple html
 
 == License
