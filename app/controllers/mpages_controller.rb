@@ -10,6 +10,7 @@ class MpagesController < ApplicationController
 
   def create
     @mpage_url = mpage_url(:page_name => "m#{@project.encrypt(params[:page_name])}")
+    render :template => 'mpages/create', :layout => false
   end
 
   def show
