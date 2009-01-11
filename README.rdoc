@@ -22,14 +22,13 @@ Mpage introduction video: http://www.screencast.com/t/nsVURo2kIx
 * a google gadget, click http://fusion.google.com/add?source=atgs&moduleurl=http%3A//github.com/xli/mpage/raw/v0.2/clients/gadget/mpage-0.2.xml to install into your igoogle desktop
 * a simple html
 
-== License
-
-mPage is available under an Apache License Version 2.0.
-
 = Other stuff
 
-Author::  Li Xiao <iam@li-xiao.com>
-License::  Copyright 2008 by Li Xiao.
+Author:  Li Xiao <iam@li-xiao.com>
+
+Requires: Mingle 2.1 or later
+
+License:  Copyright (c) 2008 ThoughtWorks, Inc.  All rights reserved.
            Released under an Apache License Version 2.0.  See the LICENSE file
            included in the distribution.
 
