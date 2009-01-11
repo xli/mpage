@@ -13,8 +13,11 @@ Mpage introduction video: http://www.screencast.com/t/nsVURo2kIx
 * shutdown Mingle server
 * Download and unzip into directory: <mingle_installer_dir>/vendor/plugins
 * start Mingle server
+* open mpages index page: http://domain:port/projects/project_identifier/mpages
+* type in the page name need display in another web application and click 'Generate Mpage URL'
+* copy and paste this url into mpage client
 
-=== 2 integrating examples are placed in examples directory:
+=== 2 integrating examples are placed in the clients directory:
 
 * a google gadget, click http://fusion.google.com/add?source=atgs&moduleurl=http%3A//github.com/xli/mpage/raw/v0.2/clients/gadget/mpage-0.2.xml to install into your igoogle desktop
 * a simple html
